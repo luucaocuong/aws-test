@@ -17,7 +17,7 @@ Resources:
       CidrBlock: 10.10.0.0/16
       Tags:
         - Key: Name
-          Value: VPC-Name_1
+          Value: VPC-Name_2
     Metadata:
       'AWS::CloudFormation::Designer':
         id: c1c79669-6099-42cf-9acc-361ec5e80a4c
@@ -30,9 +30,9 @@ Resources:
         - '0'
         - Fn::GetAZs:
             Ref: AWS::Region
-      CidrBlock: 10.10.0.0/24
+      CidrBlock: 10.100.0.0/24
       VpcId:
         Ref: VPC1
       Tags:
       - Key: Name
-        Value: "PublicSubnet01"
+        Value: "PublicSubnet02"
